@@ -26,8 +26,10 @@
         <!--<servlet-name>dispatcher</servlet-name>-->
         <!--<url-pattern>*.form</url-pattern>-->
     <!--</servlet-mapping>-->
+
+    <!-- 项目启动页面   -->
     <welcome-file-list>
-        <welcome-file>/a/listBooks.jsp</welcome-file>
+        <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
     <!-- 配置spring -->
@@ -59,7 +61,7 @@
 
     <!-- 前端控制器 -->
     <servlet>
-        <servlet-name>springmvc-web</servlet-name>
+        <servlet-name>springbook</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
@@ -68,7 +70,7 @@
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>springmvc-web</servlet-name>
+        <servlet-name>springbook</servlet-name>
         <url-pattern>/</url-pattern><!--*.action-->
     </servlet-mapping>
 
